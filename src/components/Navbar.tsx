@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { saasConfig } from "@/config/saasConfig";
 import CTAButton from "@/components/CTAButton";
 import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
     <header className="glass-surface sticky top-0 z-40 border-x-0 border-t-0">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
         <a href="#" className="gradient-text font-display text-lg font-bold">
-          {saasConfig.meta.siteName}
+          <Logo />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
