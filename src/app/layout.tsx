@@ -31,13 +31,6 @@ export const metadata: Metadata = {
     images: [{ url: saasConfig.meta.ogImage, width: 1200, height: 630 }],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: saasConfig.meta.title,
-    description: saasConfig.meta.description,
-    creator: saasConfig.meta.twitterHandle,
-    images: [saasConfig.meta.ogImage],
-  },
 };
 
 const themeInitScript = `
