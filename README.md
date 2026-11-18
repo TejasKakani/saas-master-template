@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SaaS Master Template
 
-## Getting Started
+A configurable landing-page template for launching a SaaS product, built with Next.js. It includes a hero section, features, pricing, a waitlist sign-up flow and light/dark theming, so a new product page can be started by editing one config file.
 
-First, run the development server:
+## Features
+
+- Landing page sections: navbar, hero, features, pricing and footer
+- Waitlist modal with a server action that stores sign-ups in MongoDB
+- Input validation with Zod and request rate limiting
+- Light and dark theme toggle
+- Product name, copy and brand color driven by `src/config/saasConfig.ts`
+- PostHog analytics integration
+
+## Tech stack
+
+- Next.js (App Router), React, TypeScript
+- Tailwind CSS
+- MongoDB (Mongoose)
+- Zod, PostHog, Lucide icons
+
+## Getting started
 
 ```bash
+npm install
+cp .env.example .env.local   # then fill in your own values
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tejas Kakani - [LinkedIn](https://www.linkedin.com/in/tejas-kakani) | [Portfolio](https://tejaskakani.github.io/myportfolio)
